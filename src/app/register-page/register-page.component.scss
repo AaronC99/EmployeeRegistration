@@ -1,0 +1,86 @@
+.example-card {
+    max-width: 400px;
+    top:50%;
+    left:50%; 
+    transform:translate(-50%,-50%);
+    margin-top: 400px;
+    border-radius: 20px;
+    background-image: linear-gradient(#DAE2F8,#D6A4A4);
+  }
+  mat-card-actions{
+    padding-top: 50px;
+  }
+  .register{
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size: 20px;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .header{
+    justify-content: center;
+    margin: 10px 60px ;
+  }
+  .employee {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .employee li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .employee li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .employee li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .employee li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  .employee .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 3em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  .example-events {
+    height: 200px;
+    border: 1px solid #555;
+    overflow: auto;
+  }
+  .button{
+    text-align: center;
+  }
+  .button .display{ 
+    border-radius: 20px;
+  }

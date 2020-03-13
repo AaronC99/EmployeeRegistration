@@ -1,0 +1,36 @@
+<nav>
+    <button mat-raised-button color="warn" class="display" routerLink="/register">Back</button>
+</nav> 
+  <mat-card>
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container matColumnDef="fname">
+        <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.fname}} </mat-cell>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="lname">
+        <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.lname}} </mat-cell>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="dob">
+        <mat-header-cell *matHeaderCellDef> Date Of Birth </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.dob | date:'mediumDate'}} </mat-cell>
+      </ng-container>
+    
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <!-- <mat-card *ngIf="loading" style="display: flex; justify-content: center; align-items: center">
+      <mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+    </mat-card> -->
+  </mat-card>
